@@ -1,15 +1,22 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import HomeScreen from "./src/screens/HomeScreen";
+import HomeScreen from './src/screens/HomeScreen';
+import InventoryScreen from './src/screens/InventoryScreen';
+import BuildScreen from './src/screens/BuildScreen';
+import ShopScreen from './src/screens/ShopScreen';
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen
+    Home: HomeScreen,
+    Inventory: InventoryScreen,
+    Build: BuildScreen,
+    Shop: ShopScreen,
   },
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "App"
+      title : 'App'
+      //headerShown: false
     }
   }
 );
