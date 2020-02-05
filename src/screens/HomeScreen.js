@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity, View } from "react-native";
 
+import HomeList from './HomeScreenList';
+import { WoodCategories, MineCategories, AdventureCategories } from "../../data/dummydata";
 
 class HomeScreen extends React.Component {
 
@@ -9,32 +11,46 @@ class HomeScreen extends React.Component {
     this.state={
       wood: 0,
       stone: 0,
-      gold: 1000
+      gold: 1000,
+      resources: [],
+      adventureCategories: false,
+      woodCategories: false,
+      mineCategories: false
     }
   }
   
   increaseWood = () =>{
     return this.setState({
-      wood: this.state.wood + 1
+      woodCategories: !this.state.woodCategories,
+      mineCategories: false,
+      adventureCategories: false,
+      resources: this.state.woodCategories ? [] : WoodCategories
     })
   }
 
   increaseStone = () =>{
     return this.setState({
-      stone: this.state.stone + 1
+      woodCategories: false,
+      mineCategories: !this.state.mineCategories,
+      adventureCategories: false,
+      resources: this.state.mineCategories ? [] : MineCategories
     })
   }
-
+//this.state.gold + Math.floor(Math.random() * 100) + 1
   increaseGold = () =>{
-    return this.setState({
-      gold: this.state.gold + Math.floor(Math.random() * 100) + 1
+    console.log(this.state.adventureCategories)
+    this.setState({
+      woodCategories: false,
+      mineCategories: false,
+      adventureCategories: !this.state.adventureCategories,
+      resources: this.state.adventureCategories ? [] :  AdventureCategories
     })
+    console.log(this.state.adventureCategories)
+    return
   }
   
 
   render(){
-    const {navigate} = this.props.navigation
-
     return(
       <View>
         <View style={styles.buttonlayout}>
@@ -69,6 +85,7 @@ class HomeScreen extends React.Component {
           </View>
         </View>
 
+        <HomeList listData={this.state.resources} />
         
       </View>
     )

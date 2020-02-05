@@ -7,6 +7,7 @@ import HomeScreen from '../src/screens/HomeScreen';
 import InventoryScreen from '../src/screens/InventoryScreen';
 import BuildScreen from '../src/screens/BuildScreen';
 import ShopScreen from '../src/screens/ShopScreen';
+import { WoodCategories, MineCategories,GoldCategories } from '../data/dummydata';
 
 const GameNavigator = createStackNavigator(
   {
