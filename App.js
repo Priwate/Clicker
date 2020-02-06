@@ -1,24 +1,14 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import HomeScreen from './src/screens/HomeScreen';
-import InventoryScreen from './src/screens/InventoryScreen';
-import BuildScreen from './src/screens/BuildScreen';
-import ShopScreen from './src/screens/ShopScreen';
+import React from 'react';
+import GameNavigator from './navigator/Navigator';
+import { enableScreens  } from 'react-native-screens';
 
-const navigator = createStackNavigator(
-  {
-    Home: HomeScreen,
-    Inventory: InventoryScreen,
-    Build: BuildScreen,
-    Shop: ShopScreen,
-  },
-  {
-    initialRouteName: "Home",
-    defaultNavigationOptions: {
-      title : 'App'
-      //headerShown: false
-    }
-  }
-);
 
-export default createAppContainer(navigator);
+enableScreens();
+
+export default function App() {
+
+  return (
+    <GameNavigator />
+  );
+}
+
