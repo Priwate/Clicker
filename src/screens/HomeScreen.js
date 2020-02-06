@@ -38,14 +38,12 @@ class HomeScreen extends React.Component {
   }
 //this.state.gold + Math.floor(Math.random() * 100) + 1
   increaseGold = () =>{
-    console.log(this.state.adventureCategories)
     this.setState({
       woodCategories: false,
       mineCategories: false,
       adventureCategories: !this.state.adventureCategories,
       resources: this.state.adventureCategories ? [] :  AdventureCategories
     })
-    console.log(this.state.adventureCategories)
     return
   }
   

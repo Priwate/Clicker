@@ -8,8 +8,8 @@ class InventoryScreen extends React.Component {
         this.state={
             axe: null,
             pickaxe: null,
-            sword: null,
-            armor: null,
+            sword: null
+            
         }
       }
 
