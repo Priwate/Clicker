@@ -17,7 +17,7 @@ class BuildScreen extends React.Component {
     render(){
         return(
             <View>
-                <Text>Hello</Text>
+                <Text>Suck my dick</Text>
             </View>
         )
     }

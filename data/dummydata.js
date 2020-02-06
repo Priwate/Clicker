@@ -13,15 +13,15 @@ export const WoodCategories =[
 
 ]
 export const MineCategories =[
-  new Category('s1','Stone Quarry','1','Stone','Chipped Stone PickAxe','11','1'),
-  new Category('s2','Stone Quarry','2','Stone','Normal Stone PickAxe','10','1'),
-  new Category('s3','Stone Quarry','3','Stone','Excellent Stone PickAxe','9','1'),
-  new Category('s4','Stone Quarry','4','Stone','Chipped Copper PickAxe','7','1'),
-  new Category('s5','Stone Quarry','5','Stone','Normal Copper PickAxe','6','1'),
-  new Category('s6','Stone Quarry','6','Stone','Excellent Copper PickAxe','5','1'),
-  new Category('s7','Stone Quarry','7','Stone','Chipped Iron PickAxe','3','1'),
-  new Category('s8','Stone Quarry','8','Stone','Normal Iron PickAxe','2','1'),
-  new Category('s9','Stone Quarry','9','Stone','Excellent Iron PickAxe','1','1')
+  new Category('s1','Stone Quarry','1','Stone','Chipped Stone Pickaxe','11','1'),
+  new Category('s2','Stone Quarry','2','Stone','Normal Stone Pickaxe','10','1'),
+  new Category('s3','Stone Quarry','3','Stone','Excellent Stone Pickaxe','9','1'),
+  new Category('s4','Stone Quarry','4','Stone','Chipped Copper Pickaxe','7','1'),
+  new Category('s5','Stone Quarry','5','Stone','Normal Copper Pickaxe','6','1'),
+  new Category('s6','Stone Quarry','6','Stone','Excellent Copper Pickaxe','5','1'),
+  new Category('s7','Stone Quarry','7','Stone','Chipped Iron Pickaxe','3','1'),
+  new Category('s8','Stone Quarry','8','Stone','Normal Iron Pickaxe','2','1'),
+  new Category('s9','Stone Quarry','9','Stone','Excellent Iron Pickaxe','1','1')
 
 ]
 export const AdventureCategories =[

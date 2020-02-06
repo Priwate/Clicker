@@ -13,7 +13,7 @@ class ShopScreen extends React.Component {
 
     render(){
         return(
-            <View>
+            <View styles={styles.text}>
                 <Text>Welcome to the Shop</Text>
             </View>
         )

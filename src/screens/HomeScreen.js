@@ -18,6 +18,24 @@ class HomeScreen extends React.Component {
       mineCategories: false
     }
   }
+
+  handleResources = (resource, amount) =>{
+    if (resource === 'a'){
+      this.setState({
+        gold: this.state.gold + Number(amount)
+      })
+    }
+    if (resource === 's'){
+      this.setState({
+        stone: this.state.stone + Number(amount)
+      })
+    }
+    if (resource === 'w'){
+      this.setState({
+        wood: this.state.wood + Number(amount)
+      })
+    }
+   }
   
   increaseWood = () =>{
     return this.setState({
@@ -50,7 +68,7 @@ class HomeScreen extends React.Component {
 
   render(){
     return(
-      <View>
+      <View style={styles.mainContainer}>
         <View style={styles.buttonlayout}>
           <View style={styles.text}>
             <Text>Wood : {this.state.wood}</Text>
@@ -83,7 +101,7 @@ class HomeScreen extends React.Component {
           </View>
         </View>
 
-        <HomeList listData={this.state.resources} />
+        <HomeList listData={this.state.resources} onFinish={this.handleResources} />
         
       </View>
     )
@@ -91,6 +109,9 @@ class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  mainContainer: {
+    marginTop: 15
+  },
   text: {
     alignItems: 'center',
     justifyContent: 'center'
@@ -100,27 +121,31 @@ const styles = StyleSheet.create({
     width: 100,
     backgroundColor: 'burlywood',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderRadius: 16
   },
   mineButton: {
     flex: 1,
     width: 100,
     backgroundColor: 'darkgrey',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderRadius: 16
   },
   adventureButton: {
     flex: 1,
     width: 100,
     backgroundColor: 'gold',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderRadius: 16
   },
   buttonlayout: {
     height: 100,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    paddingTop: 20
+    paddingTop: 20,
+    
   },
   lowerbutonslayout: {
     flexDirection: 'row',
