@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet, FlatList} from 'react-native';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import * as Progress from 'react-native-progress';
 
 

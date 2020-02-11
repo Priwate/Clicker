@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet, FlatList} from 'react-native';
+import {View, StyleSheet, FlatList} from 'react-native';
 import HomeItem from './HomeItem'
 
 const HomeList = props =>{
@@ -18,9 +18,7 @@ const HomeList = props =>{
         hits = {itemData.item.hits}
         value = {itemData.item.value}
         color = {color}
-        // onSelectHomeItem ={()=>{
-        //   console.log('Chop Chop');
-        // }}
+
       />
     )
   }

@@ -1,6 +1,5 @@
 import React from "react";
-import { Text, StyleSheet, TouchableOpacity, View } from "react-native";
-
+import { Text, StyleSheet, TouchableOpacity, View} from "react-native";
 import HomeList from './HomeScreenList';
 import { WoodCategories, MineCategories, AdventureCategories } from "../../data/dummydata";
 
