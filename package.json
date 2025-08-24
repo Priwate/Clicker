@@ -11,7 +11,7 @@
     "@react-native-community/masked-view": "0.1.5",
     "clean-webpack-plugin": "^3.0.0",
     "expo": "^36.0.2",
-    "expo-cli": "^3.11.7",
+    "expo-cli": "^6.3.12",
     "json-loader": "^0.5.7",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "babel-preset-expo": "~8.0.0",
-    "webpack-dev-server": "^3.10.2"
+    "webpack-dev-server": "^5.2.2"
   },
   "private": true
 }
